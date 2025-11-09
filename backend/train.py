@@ -9,7 +9,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LinearRegression
 
-DATASET_PATH = os.getenv("DATASET_PATH", "data/CAR DETAILS FROM CAR DEKHO.csv")
+DATASET_PATH = os.getenv("DATASET_PATH", "data/cardekho_dataset.csv")
 MODEL_DIR = os.getenv("MODEL_DIR", "models")
 MODEL_PATH = os.path.join(MODEL_DIR, "cardekho_linreg.joblib")
 SCHEMA_PATH = os.path.join(MODEL_DIR, "feature_schema.joblib")

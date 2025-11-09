@@ -75,5 +75,10 @@ def predict(req: PredictRequest):
     return PredictResponse(predictions=[float(p) for p in preds])
 
 if __name__ == "__main__":
-    # Allows: python api/main.py
-    uvicorn.run("api.main:app", host="0.0.0.0", port=8000, reload=False)
+    uvicorn.run(
+        app,
+        host="0.0.0.0",
+        port=int(os.getenv("PORT", 8000)),
+        reload=False
+    )
+

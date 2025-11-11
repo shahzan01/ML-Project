@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 import uvicorn
 
-MODEL_PATH = os.getenv("MODEL_PATH", "models/cardekho_linreg.joblib")
+MODEL_PATH = os.getenv("MODEL_PATH", "models/cardekho_rf.joblib")
 SCHEMA_PATH = os.getenv("SCHEMA_PATH", "models/feature_schema.joblib")
 CORS_ORIGINS = os.getenv("CORS_ORIGINS", "*")
 
